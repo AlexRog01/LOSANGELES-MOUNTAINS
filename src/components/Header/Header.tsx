@@ -45,12 +45,12 @@ export const Header = () => {
 
       <div
         className="header__background-layer layer1"
-        style={{ backgroundImage: 'url("public/images/header-background0.png")' }}
+        style={{ backgroundImage: 'url("images/header-background0.png")' }}
       ></div>
 
       <div
         className="header__background-layer layer2"
-        style={{ backgroundImage: 'url("public/images/header_background1.png")' }}
+        style={{ backgroundImage: 'url("images/header_background1.png")' }}
       ></div>
     </header>
   );

@@ -11,5 +11,5 @@ export default defineConfig({
       },
     },
   },
-  base: '/LOSANGELES-MOUNTAINS',
+  base: '/LOSANGELES-MOUNTAINS/',
 });
