@@ -1,11 +1,5 @@
 @import '../../utilities/utilities.scss';
 
-$title-size: 10.4rem;
-
-@include onPhone {
-  $title-size: 2rem;
-}
-
 .header {
   height: 100vh;
   position: relative;
@@ -29,7 +23,11 @@ $title-size: 10.4rem;
     }
   }
 
-  @include main-title($title-size);
+  @include main-title(10.4rem);
+
+  @include onPhone {
+    @include main-title(8.5rem);
+  }
 
   &__background-layer {
     background-size: cover;
