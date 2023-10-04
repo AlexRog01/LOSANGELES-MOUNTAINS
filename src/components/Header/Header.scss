@@ -1,0 +1,75 @@
+@import '../../utilities/utilities.scss';
+
+$title-size: 10.4rem;
+
+@include onPhone {
+  $title-size: 2rem;
+}
+
+.header {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  &__navigation {
+    margin-top: 7px;
+  }
+
+  &__content {
+    transform: translate(-50%, calc(var(--scroll-top) / 2));
+    will-change: transform;
+    z-index: 1;
+
+    position: absolute;
+    left: 44.5%;
+    top: 29%;
+
+    @include onPhone {
+      left: 50%;
+    }
+  }
+
+  @include main-title($title-size);
+
+  &__background-layer {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .layer1 {
+    z-index: 0;
+    transform: translateY(calc(var(--scroll-top) / 2));
+    will-change: transform;
+  }
+
+  .layer2 {
+    pointer-events: none;
+    z-index: 2;
+    transform: translateY(calc(var(--scroll-top) / 3));
+    will-change: transform;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 22px;
+
+  position: relative;
+  z-index: 1;
+
+  &__list {
+    @include navigation-list;
+  }
+
+  &__link {
+    @include navigation-link (white);
+  }
+}

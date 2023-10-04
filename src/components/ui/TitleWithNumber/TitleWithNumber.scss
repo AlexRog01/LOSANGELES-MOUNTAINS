@@ -1,0 +1,27 @@
+@import "../../../utilities/_vars";
+
+.title {
+  position: relative;
+  display: inline-block;
+
+  &__number {
+    font-size: 8.5rem;
+    opacity: 0.502;
+    color: $mainThemeColor;
+    font-weight: 800;
+    font-family: 'Oswald', sans-serif;
+
+    line-height: 80%;
+  }
+
+  &__text {
+    font-size: 2rem;
+    color: $mainThemeColor;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+
+    position: absolute;
+    left: 83%;
+    top: 48%;
+  }
+}

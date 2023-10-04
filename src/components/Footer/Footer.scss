@@ -1,0 +1,56 @@
+@import '../../utilities/utilities.scss';
+
+.footer{
+  background-color: $mainThemeColor;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.438rem 0 1.438rem 1rem;
+
+    @include onPhone {
+      gap: 3rem;
+    }
+  }
+
+  &__text {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #63769d;
+    font-weight: 900;
+    font-style: italic;
+  }
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  &__logo {
+    opacity: 0.3;
+  }
+
+  &__title1 {
+    font-size: calc(1.6rem * 91 / 100);
+    color: #63769d;
+    line-height: 80%;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+  }
+
+  &__title2 {
+    font-size: 1.6rem;
+    color: #63769d;
+    line-height: 95%;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+  }
+}

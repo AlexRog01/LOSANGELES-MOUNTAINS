@@ -1,0 +1,78 @@
+@import "../../../utilities/utilities.scss";
+
+.climb {
+  &__title-field {
+    display: flex;
+    align-items: center;
+    gap: 9%;
+    padding: 31px 43px;
+
+    @include onTabletPortrait {
+      flex-direction: column;
+      align-items: start;
+      gap: 10px;
+    }
+  }
+
+  &__navigation {
+    background-color: $mainThemeColor;
+  }
+
+  &__content {
+    min-height: 66.5vh;
+    padding-top: 6.3%;
+    background-image: url(public/images/climb_background.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__schedule{
+    // margin-top: 10rem;
+    margin-left: 3.22%;
+  }
+}
+
+.climbNav {
+  .climbNav__list {
+    display: flex;
+
+    @include onTabletPortrait {
+      display: none;
+    }
+  }
+
+  &__btn {
+    padding: 10px 24px;
+    font-size: 1.2rem;
+    color: #b0b4be;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+
+    &--active {
+      background-color: #b0b4be;
+
+      & .climbNav__btn-text {
+        position: relative;
+        color: $mainThemeColor;
+
+        &::after {
+          content: "";
+          width: 100%;
+          height: calc(1rem / 10);
+          background-color: $mainThemeColor;
+          position: absolute;
+          left: 0;
+          bottom: -2%;
+        }
+      }
+    }
+  }
+
+  &__burger-menu {
+    display: none;
+
+    @include onTabletPortrait {
+      display: initial;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.photo-container {
+  width: 220px;
+  height: 135px;
+  padding: 0 5px 0 5px;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slick-dots li {
+  margin: 0;
+  width: 15px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: rgb(255, 255, 255);
+}
+
+.slick-dots li button {
+  padding: 5px 3px;
+}
+
+.slick-dots li button:before {
+  color: rgb(138, 138, 138);
+  opacity: initial;
+}

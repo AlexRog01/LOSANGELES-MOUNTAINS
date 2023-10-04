@@ -1,0 +1,54 @@
+@import '../../../utilities/utilities.scss';
+
+.history {
+  &__navigation {
+    padding: 14px 0 14px 22px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    background-image: url(public/images/main_background.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 110vh;
+    padding-top: 60px;
+    position: relative;
+  }
+
+  &__text {
+    max-width: 814px;
+    margin: 0 auto;
+  }
+
+  &__photo-swiper {
+    background-color: #3f5072c4;
+    padding: 25px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__photo-swiper-container {
+    padding: 0 25px;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  @include main-title(1.6rem);
+}
+
+.nav {
+  &__list {
+    @include navigation-list;
+   }
+
+   &__link {
+     @include navigation-link($mainThemeColor);
+   }
+}
