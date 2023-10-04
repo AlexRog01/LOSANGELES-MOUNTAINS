@@ -7,9 +7,9 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       sass: {
-        // Добавьте путь к вашему файлу SASS, например, src/styles/main.scss
         additionalData: `@import "./src/styles/main.scss";`,
       },
     },
   },
+  base: '/LOSANGELES-MOUNTAINS',
 });
